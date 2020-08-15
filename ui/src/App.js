@@ -1,24 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-// import './App.css';
-
-import Home from './containers/Home';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { CssBaseline } from "@material-ui/core";
+import AppRoutes from "./routes";
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <header className="App-header">
-          
-        </header>
-        <main>
-          <Switch>
-            <Route path="/" exact component={Home} />
-          </Switch>
-        </main>
-      </div>
+      <CssBaseline />
+      <AppRoutes />
     </Router>
-
   );
 }
 
